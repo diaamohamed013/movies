@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- start section of navBar -->
+    <section class="navBar d-flex">
+        <div class="navLinks d-flex flex-column justify-content-between">
+            <div class="links overflow-hidden">
+                <ul>
+                    <li class="movieLink">
+                        Now playing
+                    </li>
+                    <li class="movieLink">
+                        Popular
+                    </li>
+                    <li class="movieLink">
+                        Top Rated
+                    </li>
+                    <li class="movieLink">
+                        Trending
+                    </li>
+                    <li class="movieLink">
+                        Upcoming
+                    </li>
+                    <li class="contactLink">
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyRight p-3">
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="py-3">
+                    Copyright Â© 2019 All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        <div class="navOption d-flex flex-column justify-content-between pb-4">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="openClose d-flex justify-content-center align-content-center p-3 text-center">
+                <i class="fa-solid fa-bars show"></i>
+                <i class="fa-solid fa-xmark hide"></i>
+            </div>
+            <div class="share d-flex flex-column justify-content-center align-content-center  text-center">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes py-3"></i>
+            </div>
+        </div>
+    </section>
+    <!-- end section of navBar -->
+
+    <!-- start section of searchInputs -->
+    <section class="searchInputs ms-5 p-5">
+        <div class="container pb-1">
+            <div class="row gy-3">
+                <div class="col-md-6">
+                    <div class="search">
+                        <input type="text" id="wordSearch" placeholder="get movies by word.." class="form-control "
+                            required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <input type="text" id="searchInp" placeholder="search.." class="form-control" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section of searchInputs -->
+
+    <!-- start section of display searchItems -->
+    <section class="searchItems ms-5">
+        <div class="container">
+            <div class="row" id="searchRow">
+            </div>
+        </div>
+    </section>
+    <!-- end section of display searchItems -->
+
+    <!-- start section of items -->
+    <section class="items ms-5 searchItems py-5">
+        <div class="container">
+            <div class="row gy-4" id="mainRow">
+            </div>
+        </div>
+    </section>
+    <!-- end section of items -->
+
+    <!-- start section of contactUS -->
+    <section class="contactUS ms-5 py-4" id="contact">
+        <div class="container">
+            <h2 class="text-white my-3">
+                Contact Us..
+            </h2>
+            <div class="row pt-4 gy-3">
+                <div class="col-md-6 py-2">
+                    <div class="validate">
+                        <input type="text" id="name" placeholder="Enter Your Name" class="form-control" required>
+                    </div>
+                    <p class="my-2 alert p-2 hide validate1">
+                        Your name is invalid
+                    </p>
+                </div>
+                <div class="col-md-6 py-2">
+                    <div class="validate">
+                        <input type="email" id="mail" placeholder="Enter Email" class="form-control" required>
+                    </div>
+                    <p class="my-2 alert p-2 hide validate2">
+                        Your email is invalid
+                    </p>
+                </div>
+                <div class="col-md-6 py-2">
+                    <div class="validate">
+                        <input type="text" id="phone" placeholder="Enter Your Phone" class="form-control" required>
+                    </div>
+                    <p class="my-2 alert p-2 hide validate3">
+                        Your phone is invalid
+                    </p>
+                </div>
+                <div class="col-md-6 py-2">
+                    <div class="validate">
+                        <input type="text" id="age" placeholder="Enter Your Age" class="form-control" required>
+                    </div>
+                    <p class="my-2 alert p-2 hide validate4">
+                        Your age is invalid
+                    </p>
+                </div>
+                <div class="col-md-6 py-2">
+                    <div class="validate">
+                        <input type="password" id="pass" placeholder="Enter Your password" class="form-control"
+                            required>
+                    </div>
+                    <p class="my-2 alert p-2 hide validate5">
+                        Your password is invalid (Minimum eight characters, at least one letter and one number)
+                    </p>
+                </div>
+                <div class="col-md-6 py-2">
+                    <div class="validate">
+                        <input type="password" id="repass" placeholder="Re-Enter Your Password" class="form-control"
+                            required>
+                    </div>
+                    <p class="my-2 alert p-2 hide validate6">
+                        Your re-password is invalid
+                    </p>
+                </div>
+            </div>
+            <button class="btn mt-2">Submit</button>
+        </div>
+    </section>
+    <!-- end section of contactUS -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
