@@ -177,3 +177,12 @@ li, i {
 }
 
 /* end styling for contactUS section  */
+
+@media screen and (max-width:500px) {
+    .card-body h3{
+        font-size: 18px;
+    }
+    .card-body p{
+        font-size: 13px;
+    }
+}
