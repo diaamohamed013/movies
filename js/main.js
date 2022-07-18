@@ -110,12 +110,12 @@ function display(s) {
                         <div class="card-img">
                             <img src="https://image.tmdb.org/t/p/w500${s[i].poster_path}" class="w-100 d-block" alt="">
                         </div>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center overflow-hidden">
                             <h3>
                                 ${s[i].original_title ? s[i].original_title : s[i].original_name}
                             </h3>
                             <p>
-                                ${s[i].overview ? s[i].overview : "Not Found Yet"}
+                                ${s[i].overview ? s[i].overview.split(" ").splice(0, 25).join(" ") : "Not Found Yet"}
                             </p>
                             <p>
                                 rate: <span>${s[i].vote_average ? s[i].vote_average : "0"}</span>
@@ -139,12 +139,12 @@ function displayMovie(x) {
                         <div class="card-img">
                             <img src="https://image.tmdb.org/t/p/w500${x[i].poster_path}" class="w-100 d-block" alt="">
                         </div>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center overflow-hidden">
                             <h3>
                                 ${x[i].original_title ? x[i].original_title : x[i].original_name}
                             </h3>
                             <p>
-                                ${x[i].overview ? x[i].overview : "Not Found Yet"}
+                                ${x[i].overview != null ? x[i].overview.split(" ").splice(0, 25).join(" ") : "Not Found Yet"}
                             </p>
                             <p>
                                 rate: <span>${x[i].vote_average ? x[i].vote_average : "0"}</span>
@@ -162,12 +162,12 @@ function displayMovie(x) {
                         <div class="card-img h-100">
                             <img src="images/dummy-image-square.jpg" class="w-100 h-100 d-block" alt="">
                         </div>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center overflow-hidden">
                             <h3>
                                 ${x[i].original_title ? x[i].original_title : x[i].original_name}
                             </h3>
                             <p>
-                                ${x[i].overview ? x[i].overview : "Not Found Yet"}
+                                ${x[i].overview != null ? x[i].overview.split(" ").splice(0, 25).join(" ") : "Not Found Yet"}
                             </p>
                             <p>
                                 rate: <span>${x[i].vote_average ? x[i].vote_average : "0"}</span>
